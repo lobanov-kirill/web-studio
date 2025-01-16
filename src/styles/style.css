@@ -1,0 +1,14 @@
+:root {
+  --color-text-title: #212121;
+  --color-bg-primary: #2f303a;
+  --color-text-contact: rgba(255, 255, 255, 0.6);
+  --color-header-border: #ececec;
+  --color-team-section: #f5f4fa;
+  --color-second-logo: #2196f3;
+  --color-first-logo: #000000;
+  --color-text-main: #757575;
+  --color-header-border: #ffffff;
+}
+
+.logo {
+}
