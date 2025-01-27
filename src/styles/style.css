@@ -9,3 +9,10 @@
   --color-text-main: #757575;
   --color-work-section: #ffffff;
 }
+body {
+  font-family: "Roboto", serif;
+}
+
+.logo {
+  font-family: "Raleway", serif;
+}
