@@ -1,18 +1,230 @@
 :root {
+  /*Кольори*/
   --color-text-title: #212121;
   --color-bg-primary: #2f303a;
   --color-text-contact: rgba(255, 255, 255, 0.6);
   --color-header-border: #ececec;
   --color-team-section: #f5f4fa;
-  --color-second-logo: #2196f3;
-  --color-first-logo: #000000;
+  --color-first-logo: #2196f3;
+  --color-second-logo: #000000;
   --color-text-main: #757575;
   --color-work-section: #ffffff;
-}
-body {
-  font-family: "Roboto", serif;
+  --color-gallery-border: #eeeeee;
+
+  /*Шрифти*/
+  --font-primary: "Roboto", serif;
+  --font-secondary: "Raleway", serif;
 }
 
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--color-text-main);
+}
+
+/*HEADER*/
 .logo {
-  font-family: "Raleway", serif;
+  font-family: var(--font-secondary);
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-first-logo);
+}
+
+.logo-part {
+  color: var(--color-second-logo);
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-text-title);
+  line-height: 1.14;
+}
+
+.header-contacts-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-text-main);
+  line-height: 1.14;
+}
+
+.nav-link:hover {
+  color: var(--color-first-logo);
+}
+
+.nav-link:active {
+  color: var(--color-first-logo);
+}
+
+.header-contacts-link:hover {
+  color: var(--color-first-logo);
+}
+
+/*STUDIO SECTIONS*/
+.hero {
+  background-color: var(--color-bg-primary);
+  border-top: 1px solid var(--color-header-border);
+}
+
+.hero-title {
+  color: var(--color-work-section);
+  font-weight: 900;
+  line-height: 1.36;
+  font-size: 44px;
+}
+
+.hero-button {
+  background-color: var(--color-first-logo);
+  font-weight: 700;
+  color: var(--color-work-section);
+  line-height: 1.87;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+}
+
+.advantures-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--color-text-title);
+}
+
+.advantures-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-main);
+}
+
+.work-title {
+  color: var(--color-text-title);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.team {
+  background-color: var(--color-team-section);
+}
+
+.teammate-photo {
+  width: 270px;
+  height: 260px;
+}
+.team-title {
+  color: var(--color-text-title);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.teammate-name {
+  font-size: 16px;
+  color: var(--color-text-title);
+  line-height: 1.18;
+  font-weight: 500;
+}
+
+.teammate-role {
+  font-size: 16px;
+  color: var(--color-text-main);
+  line-height: 1.18;
+  font-weight: 400;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: var(--color-bg-primary);
+}
+
+.footer-logo {
+  font-family: var(--font-secondary);
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-first-logo);
+}
+
+.footer-logo-part {
+  color: var(--color-work-section);
+}
+
+.footer-adress-text {
+  color: var(--color-work-section);
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-contacts-link {
+  color: var(--color-text-contact);
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  font-style: normal;
+}
+
+/*PORTFOLIO SECTION*/
+.filter-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  color: var(--color-text-title);
+  background-color: var(--color-team-section);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  color: var(--color-work-section);
+  background-color: var(--color-first-logo);
+}
+
+.gallery-photo {
+  width: 370px;
+  height: 294px;
+}
+.gallery-item {
+  border-left: 1px solid var(--color-gallery-border);
+  border-right: 1px solid var(--color-gallery-border);
+  border-bottom: 1px solid var(--color-gallery-border);
+  border-top: none;
+}
+
+.gallery-name {
+  color: var(--color-text-title);
+  font-weight: 700;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.gallery-category {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
 }
