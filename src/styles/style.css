@@ -41,16 +41,19 @@ body {
   text-decoration: none;
   cursor: pointer;
   color: var(--color-first-logo);
+  letter-spacing: 0.03em;
 }
 
 .logo-part {
   color: var(--color-second-logo);
+  letter-spacing: 0.03em;
 }
 .nav-link {
   text-decoration: none;
   font-weight: 500;
   color: var(--color-text-title);
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-contacts-link {
@@ -58,6 +61,7 @@ body {
   font-weight: 500;
   color: var(--color-text-main);
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .nav-link:hover {
@@ -83,6 +87,9 @@ body {
   font-weight: 900;
   line-height: 1.36;
   font-size: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-button {
@@ -94,6 +101,9 @@ body {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover {
@@ -105,6 +115,8 @@ body {
   font-weight: 700;
   line-height: 1.14;
   color: var(--color-text-title);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .advantures-text {
@@ -112,6 +124,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-text-main);
+  letter-spacing: 0.03em;
 }
 
 .work-title {
@@ -119,13 +132,24 @@ body {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
+/*Team Section*/
 .team {
   background-color: var(--color-team-section);
 }
 
-.teammate-photo {
+.teammate {
+  border-radius: 0 0 4px 4px;
+  background-color: var(--color-work-section);
+  border-radius: 10px;
+  width: 270px;
+  height: 368px;
+}
+
+.teammate-img {
   width: 270px;
   height: 260px;
 }
@@ -134,6 +158,8 @@ body {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .teammate-name {
@@ -141,6 +167,8 @@ body {
   color: var(--color-text-title);
   line-height: 1.18;
   font-weight: 500;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .teammate-role {
@@ -148,6 +176,8 @@ body {
   color: var(--color-text-main);
   line-height: 1.18;
   font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /*FOOTER*/
@@ -163,10 +193,12 @@ body {
   text-decoration: none;
   cursor: pointer;
   color: var(--color-first-logo);
+  letter-spacing: 0.03em;
 }
 
 .footer-logo-part {
   color: var(--color-work-section);
+  letter-spacing: 0.03em;
 }
 
 .footer-adress-text {
@@ -175,6 +207,7 @@ body {
   line-height: 1.7;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .footer-contacts-link {
@@ -185,6 +218,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .footer-contacts-link:hover {
@@ -201,14 +235,18 @@ body {
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .filter-button:hover {
   color: var(--color-work-section);
   background-color: var(--color-first-logo);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.gallery-photo {
+.gallery-img {
   width: 370px;
   height: 294px;
 }
@@ -224,12 +262,14 @@ body {
   font-weight: 700;
   line-height: 2;
   font-size: 18px;
+  letter-spacing: 0.06em;
 }
 
 .gallery-category {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 
 .portfolio {
