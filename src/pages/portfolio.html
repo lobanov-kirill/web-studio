@@ -4,210 +4,217 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wdth,wght@75..100,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <!--Header-->
     <header class="header">
-      <a class="logo" href="../../index.html"
-        >Web<span class="logo-part">Studio</span></a
-      >
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="../../index.html">Студія</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="header-contacts-list">
-        <li class="header-contacts-item">
-          <a class="header-contacts-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts-item">
-          <a class="header-contacts-link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-    </header>
-    <main class="main">
-      <!--Portfolio section-->
-      <section class="portfolio">
-        <h1 hidden>Portfolio section</h1>
-        <!--Button list-->
-        <ul class="filter-list">
-          <li class="filter-item">
-            <button class="filter-button" type="button">Усі</button>
-          </li>
-          <li class="filter-item">
-            <button class="filter-button" type="button">Веб-сайти</button>
-          </li>
-          <li class="filter-item">
-            <button class="filter-button" type="button">Додатки</button>
-          </li>
-          <li class="filter-item">
-            <button class="filter-button" type="button">Дизайн</button>
-          </li>
-          <li class="filter-item">
-            <button class="filter-button" type="button">Маркетинг</button>
-          </li>
-        </ul>
-        <!--Projects list-->
-        <ul class="gallery-list">
-          <li class="gallery-item">
-            <article class="gallery">
-              <div class="gallery-photo">
-                <img
-                  class="gallery-img"
-                  src="../img/portfolio/laptop.png"
-                  alt="Технокряк"
-                />
-              </div>
-              <h3 class="gallery-name">Технокряк</h3>
-              <p class="gallery-category">Веб-сайт</p>
-            </article>
-          </li>
-          <li class="gallery-item">
-            <article class="gallery">
-              <div class="gallery-photo">
-                <img
-                  class="gallery-img"
-                  src="../img/portfolio/poster.png"
-                  alt="Постер New Orlean vs Golden Star"
-                />
-              </div>
-              <h3 class="gallery-name">Постер New Orlean vs Golden Star</h3>
-              <p class="gallery-category">Дизайн</p>
-            </article>
-          </li>
-          <li class="gallery-item">
-            <article class="gallery">
-              <div class="gallery-photo">
-                <img
-                  class="gallery-img"
-                  src="../img/portfolio/restaurant.png"
-                  alt="Ресторан Seafood"
-                />
-              </div>
-              <h3 class="gallery-name">Ресторан Seafood</h3>
-              <p class="gallery-category">Додаток</p>
-            </article>
-          </li>
-          <li class="gallery-item">
-            <article class="gallery">
-              <div class="gallery-photo">
-                <img
-                  class="gallery-img"
-                  src="../img/portfolio/headphones.png"
-                  alt="Проєкт Prime"
-                />
-              </div>
-              <h3 class="gallery-name">Проєкт Prime</h3>
-              <p class="gallery-category">Маркетинг</p>
-            </article>
-          </li>
-          <li class="gallery-item">
-            <article class="gallery">
-              <div class="gallery-photo">
-                <img
-                  class="gallery-img"
-                  src="../img/portfolio/boxes.png"
-                  alt="Проєкт Boxes"
-                />
-              </div>
-              <h3 class="gallery-name">Проєкт Boxes</h3>
-              <p class="gallery-category">Додаток</p>
-            </article>
-          </li>
-          <li class="gallery-item">
-            <article class="gallery">
-              <div class="gallery-photo">
-                <img
-                  class="gallery-img"
-                  src="../img/portfolio/desktop.png"
-                  alt="Inspiration has no Borders"
-                />
-              </div>
-              <h3 class="gallery-name">Inspiration has no Borders</h3>
-              <p class="gallery-category">Веб-сайт</p>
-            </article>
-          </li>
-          <li class="gallery-item">
-            <article class="gallery">
-              <div class="gallery-photo">
-                <img
-                  class="gallery-img"
-                  src="../img/portfolio/books.png"
-                  alt="Видання Limited Edition"
-                />
-              </div>
-              <h3 class="gallery-name">Видання Limited Edition</h3>
-              <p class="gallery-category">Дизайн</p>
-            </article>
-          </li>
-          <li class="gallery-item">
-            <article class="gallery">
-              <div class="gallery-photo">
-                <img
-                  class="gallery-img"
-                  src="../img/portfolio/lab.png"
-                  alt="Проєкт LAB"
-                />
-              </div>
-              <h3 class="gallery-name">Проєкт LAB</h3>
-              <p class="gallery-category">Маркетинг</p>
-            </article>
-          </li>
-          <li class="gallery-item">
-            <article class="gallery">
-              <div class="gallery-photo">
-                <img
-                  class="gallery-img"
-                  src="../img/portfolio/laptop-2.png"
-                  alt="Growing Business"
-                />
-              </div>
-              <h3 class="gallery-name">Growing Business</h3>
-              <p class="gallery-category">Додаток</p>
-            </article>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <!--Footer-->
-    <footer class="footer">
-      <a class="footer-logo" href="../../index.html"
-        >Web<span class="footer-logo-part">Studio</span></a
-      >
-      <address class="footer-adress">
-        <p class="footer-adress-text">м. Київ, пр-т Лесі Українки, 26</p>
-        <ul class="footer-contacts-list">
-          <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="mailto:info@devstudio.com"
+      <div class="container">
+        <a class="logo" href="../../index.html"
+          >Web<span class="logo-part">Studio</span></a
+        >
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts-list">
+          <li class="header-contacts-item">
+            <a class="header-contacts-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="tel:+380961111111"
+          <li class="header-contacts-item">
+            <a class="header-contacts-link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
-      </address>
+      </div>
+    </header>
+    <main class="main">
+      <!--Portfolio section-->
+      <section class="portfolio">
+        <div class="container">
+          <h1 hidden>Portfolio section</h1>
+          <!--Button list-->
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="filter-button" type="button">Усі</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Додатки</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!--Projects list-->
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <article class="gallery">
+                <div class="gallery-photo">
+                  <img
+                    class="gallery-img"
+                    src="../img/portfolio/laptop.png"
+                    alt="Технокряк"
+                  />
+                </div>
+                <h3 class="gallery-name">Технокряк</h3>
+                <p class="gallery-category">Веб-сайт</p>
+              </article>
+            </li>
+            <li class="gallery-item">
+              <article class="gallery">
+                <div class="gallery-photo">
+                  <img
+                    class="gallery-img"
+                    src="../img/portfolio/poster.png"
+                    alt="Постер New Orlean vs Golden Star"
+                  />
+                </div>
+                <h3 class="gallery-name">Постер New Orlean vs Golden Star</h3>
+                <p class="gallery-category">Дизайн</p>
+              </article>
+            </li>
+            <li class="gallery-item">
+              <article class="gallery">
+                <div class="gallery-photo">
+                  <img
+                    class="gallery-img"
+                    src="../img/portfolio/restaurant.png"
+                    alt="Ресторан Seafood"
+                  />
+                </div>
+                <h3 class="gallery-name">Ресторан Seafood</h3>
+                <p class="gallery-category">Додаток</p>
+              </article>
+            </li>
+            <li class="gallery-item">
+              <article class="gallery">
+                <div class="gallery-photo">
+                  <img
+                    class="gallery-img"
+                    src="../img/portfolio/headphones.png"
+                    alt="Проєкт Prime"
+                  />
+                </div>
+                <h3 class="gallery-name">Проєкт Prime</h3>
+                <p class="gallery-category">Маркетинг</p>
+              </article>
+            </li>
+            <li class="gallery-item">
+              <article class="gallery">
+                <div class="gallery-photo">
+                  <img
+                    class="gallery-img"
+                    src="../img/portfolio/boxes.png"
+                    alt="Проєкт Boxes"
+                  />
+                </div>
+                <h3 class="gallery-name">Проєкт Boxes</h3>
+                <p class="gallery-category">Додаток</p>
+              </article>
+            </li>
+            <li class="gallery-item">
+              <article class="gallery">
+                <div class="gallery-photo">
+                  <img
+                    class="gallery-img"
+                    src="../img/portfolio/desktop.png"
+                    alt="Inspiration has no Borders"
+                  />
+                </div>
+                <h3 class="gallery-name">Inspiration has no Borders</h3>
+                <p class="gallery-category">Веб-сайт</p>
+              </article>
+            </li>
+            <li class="gallery-item">
+              <article class="gallery">
+                <div class="gallery-photo">
+                  <img
+                    class="gallery-img"
+                    src="../img/portfolio/books.png"
+                    alt="Видання Limited Edition"
+                  />
+                </div>
+                <h3 class="gallery-name">Видання Limited Edition</h3>
+                <p class="gallery-category">Дизайн</p>
+              </article>
+            </li>
+            <li class="gallery-item">
+              <article class="gallery">
+                <div class="gallery-photo">
+                  <img
+                    class="gallery-img"
+                    src="../img/portfolio/lab.png"
+                    alt="Проєкт LAB"
+                  />
+                </div>
+                <h3 class="gallery-name">Проєкт LAB</h3>
+                <p class="gallery-category">Маркетинг</p>
+              </article>
+            </li>
+            <li class="gallery-item">
+              <article class="gallery">
+                <div class="gallery-photo">
+                  <img
+                    class="gallery-img"
+                    src="../img/portfolio/laptop-2.png"
+                    alt="Growing Business"
+                  />
+                </div>
+                <h3 class="gallery-name">Growing Business</h3>
+                <p class="gallery-category">Додаток</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="../../index.html"
+          >Web<span class="footer-logo-part">Studio</span></a
+        >
+        <address class="footer-adress">
+          <p class="footer-adress-text">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

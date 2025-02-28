@@ -32,6 +32,14 @@ body {
   color: var(--color-text-main);
 }
 
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 /*HEADER*/
 .logo {
   font-family: var(--font-secondary);
@@ -44,6 +52,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .logo-part {
   color: var(--color-second-logo);
   letter-spacing: 0.03em;
@@ -76,10 +88,12 @@ body {
   color: var(--color-first-logo);
 }
 
-/*STUDIO SECTIONS*/
+/*Hero Section*/
 .hero {
   background-color: var(--color-bg-primary);
   border-top: 1px solid var(--color-header-border);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -110,6 +124,11 @@ body {
   transform: translateY(-2px);
 }
 
+/*Work Details Section*/
+.advantures {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
 .advantures-title {
   font-size: 14px;
   font-weight: 700;
@@ -127,6 +146,7 @@ body {
   letter-spacing: 0.03em;
 }
 
+/*Work Section*/
 .work-title {
   color: var(--color-text-title);
   font-size: 36px;
@@ -136,9 +156,15 @@ body {
   text-align: center;
 }
 
+.work {
+  padding-bottom: 95px;
+}
+
 /*Team Section*/
 .team {
   background-color: var(--color-team-section);
+  padding-top: 190px;
+  padding-bottom: 50px;
 }
 
 .teammate {
@@ -183,6 +209,8 @@ body {
 /*FOOTER*/
 .footer {
   background-color: var(--color-bg-primary);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -225,6 +253,10 @@ body {
   color: var(--color-work-section);
 }
 /*PORTFOLIO SECTION*/
+.portfolio {
+  padding-top: 70px;
+  padding-bottom: 95px;
+}
 .filter-button {
   font-size: 16px;
   font-weight: 500;

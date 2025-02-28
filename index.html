@@ -23,181 +23,195 @@
   <body>
     <!--Header-->
     <header class="header">
-      <a class="logo" href="./index.html"
-        >Web<span class="logo-part">Studio</span></a
-      >
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Студія</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./src/pages/portfolio.html">Портфоліо</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="header-contacts-list">
-        <li class="header-contacts-item">
-          <a class="header-contacts-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts-item">
-          <a class="header-contacts-link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-    </header>
-    <main class="main">
-      <!--Title section-->
-      <section class="hero">
-        <div class="hero-description">
-          <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
-        </div>
-      </section>
-      <!--Work details-->
-      <section class="advantures">
-        <ul class="advantures-list">
-          <li class="advantures-item">
-            <h3 class="advantures-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="advantures-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li class="advantures-item">
-            <h3 class="advantures-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="advantures-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li class="advantures-item">
-            <h3 class="advantures-title">ПЛАНУВАННЯ</h3>
-            <p class="advantures-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="advantures-item">
-            <h3 class="advantures-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="advantures-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!--Work photos-->
-      <section class="work">
-        <h2 class="work-title">Чим ми займаємося</h2>
-        <ul class="work-list">
-          <li class="work-item">
-            <img
-              class="work-photo"
-              src="./src/img/work/frontend.jpg"
-              alt="Frontend Development"
-            />
-          </li>
-          <li class="work-item">
-            <img
-              class="work-photo"
-              src="./src/img/work/design-1.jpg"
-              alt="Product Design"
-            />
-          </li>
-          <li class="work-item">
-            <img
-              class="work-photo"
-              src="./src/img/work/design-2.jpg"
-              alt="UI Design"
-            />
-          </li>
-        </ul>
-      </section>
-      <!--Team bio-->
-      <section class="team">
-        <h2 class="team-title">Наша команда</h2>
-        <ul class="team-list">
-          <li class="team-item">
-            <article class="teammate">
-              <div class="teammate-photo">
-                <img
-                  class="teammate-img"
-                  src="./src/img/team/igor.jpg"
-                  alt="Ігор Дем'яненко"
-                />
-              </div>
-              <h3 class="teammate-name">Ігор Дем'яненко</h3>
-              <p class="teammate-role">Product Designer</p>
-            </article>
-          </li>
-          <li class="team-item">
-            <article class="teammate">
-              <div class="teammate-photo">
-                <img
-                  class="teammate-img"
-                  src="./src/img/team/olga.jpg"
-                  alt="Ольга Рєпіна"
-                />
-              </div>
-              <h3 class="teammate-name">Ольга Рєпіна</h3>
-              <p class="teammate-role">Frontend Developer</p>
-            </article>
-          </li>
-          <li class="team-item">
-            <article class="teammate">
-              <div class="teammate-photo">
-                <img
-                  class="teammate-img"
-                  src="./src/img/team/mykola.jpg"
-                  alt="икола Тарасов"
-                />
-              </div>
-              <h3 class="teammate-name">Микола Тарасов</h3>
-              <p class="teammate-role">Marketing</p>
-            </article>
-          </li>
-          <li class="team-item">
-            <article class="teammate">
-              <div class="teammate-photo">
-                <img
-                  class="teammate-img"
-                  src="./src/img/team/michailo.jpg"
-                  alt="Михайло Єрмаков"
-                />
-              </div>
-              <h3 class="teammate-name">Михайло Єрмаков</h3>
-              <p class="teammate-role">UI Designer</p>
-            </article>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <!--Footer-->
-    <footer class="footer">
-      <a class="footer-logo" href="/index.html"
-        >Web<span class="footer-logo-part">Studio</span></a
-      >
-      <address class="footer-adress">
-        <p class="footer-adress-text">м. Київ, пр-т Лесі Українки, 26</p>
-        <ul class="footer-contacts-list">
-          <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="mailto:info@devstudio.com"
+      <div class="container">
+        <a class="logo" href="./index.html"
+          >Web<span class="logo-part">Studio</span></a
+        >
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/pages/portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts-list">
+          <li class="header-contacts-item">
+            <a class="header-contacts-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="footer-contacts-item">
-            <a class="footer-contacts-link" href="tel:+380961111111"
+          <li class="header-contacts-item">
+            <a class="header-contacts-link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
-      </address>
+      </div>
+    </header>
+    <main class="main">
+      <!--Hero section-->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-description">
+            <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+            <button class="hero-button" type="button">Замовити послугу</button>
+          </div>
+        </div>
+      </section>
+      <!--Work details-->
+      <section class="advantures">
+        <div class="container">
+          <ul class="advantures-list">
+            <li class="advantures-item">
+              <h3 class="advantures-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="advantures-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="advantures-item">
+              <h3 class="advantures-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="advantures-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="advantures-item">
+              <h3 class="advantures-title">ПЛАНУВАННЯ</h3>
+              <p class="advantures-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="advantures-item">
+              <h3 class="advantures-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="advantures-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Work photos-->
+      <section class="work">
+        <div class="container">
+          <h2 class="work-title">Чим ми займаємося</h2>
+          <ul class="work-list">
+            <li class="work-item">
+              <img
+                class="work-photo"
+                src="./src/img/work/frontend.jpg"
+                alt="Frontend Development"
+              />
+            </li>
+            <li class="work-item">
+              <img
+                class="work-photo"
+                src="./src/img/work/design-1.jpg"
+                alt="Product Design"
+              />
+            </li>
+            <li class="work-item">
+              <img
+                class="work-photo"
+                src="./src/img/work/design-2.jpg"
+                alt="UI Design"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Team bio-->
+      <section class="team">
+        <div class="container">
+          <h2 class="team-title">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <article class="teammate">
+                <div class="teammate-photo">
+                  <img
+                    class="teammate-img"
+                    src="./src/img/team/igor.jpg"
+                    alt="Ігор Дем'яненко"
+                  />
+                </div>
+                <h3 class="teammate-name">Ігор Дем'яненко</h3>
+                <p class="teammate-role">Product Designer</p>
+              </article>
+            </li>
+            <li class="team-item">
+              <article class="teammate">
+                <div class="teammate-photo">
+                  <img
+                    class="teammate-img"
+                    src="./src/img/team/olga.jpg"
+                    alt="Ольга Рєпіна"
+                  />
+                </div>
+                <h3 class="teammate-name">Ольга Рєпіна</h3>
+                <p class="teammate-role">Frontend Developer</p>
+              </article>
+            </li>
+            <li class="team-item">
+              <article class="teammate">
+                <div class="teammate-photo">
+                  <img
+                    class="teammate-img"
+                    src="./src/img/team/mykola.jpg"
+                    alt="икола Тарасов"
+                  />
+                </div>
+                <h3 class="teammate-name">Микола Тарасов</h3>
+                <p class="teammate-role">Marketing</p>
+              </article>
+            </li>
+            <li class="team-item">
+              <article class="teammate">
+                <div class="teammate-photo">
+                  <img
+                    class="teammate-img"
+                    src="./src/img/team/michailo.jpg"
+                    alt="Михайло Єрмаков"
+                  />
+                </div>
+                <h3 class="teammate-name">Михайло Єрмаков</h3>
+                <p class="teammate-role">UI Designer</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="/index.html"
+          >Web<span class="footer-logo-part">Studio</span></a
+        >
+        <address class="footer-adress">
+          <p class="footer-adress-text">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
