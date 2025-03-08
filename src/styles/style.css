@@ -52,14 +52,32 @@ body {
   letter-spacing: 0.03em;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.logo {
+  margin-right: 93px;
 }
 .logo-part {
   color: var(--color-second-logo);
   letter-spacing: 0.03em;
 }
+
+.nav-list {
+  display: flex;
+  gap: 48px;
+  margin-right: 344px;
+}
+
 .nav-link {
   text-decoration: none;
   font-weight: 500;
@@ -74,6 +92,11 @@ body {
   color: var(--color-text-main);
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-contacts-list {
+  display: flex;
+  gap: 50px;
 }
 
 .nav-link:hover {
@@ -96,6 +119,18 @@ body {
   padding-bottom: 200px;
 }
 
+.hero-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1630px;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-title {
   color: var(--color-work-section);
   font-weight: 900;
@@ -104,6 +139,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  max-width: 696px;
 }
 
 .hero-button {
@@ -113,11 +149,12 @@ body {
   line-height: 1.87;
   cursor: pointer;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 32px;
   border-radius: 5px;
   letter-spacing: 0.06em;
   text-align: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
 }
 
 .hero-button:hover {
@@ -129,6 +166,12 @@ body {
   padding-top: 95px;
   padding-bottom: 95px;
 }
+
+.advantures-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
 .advantures-title {
   font-size: 14px;
   font-weight: 700;
@@ -136,6 +179,7 @@ body {
   color: var(--color-text-title);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantures-text {
@@ -147,6 +191,10 @@ body {
 }
 
 /*Work Section*/
+.work {
+  padding-bottom: 95px;
+}
+
 .work-title {
   color: var(--color-text-title);
   font-size: 36px;
@@ -154,17 +202,26 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.work {
-  padding-bottom: 95px;
+.work-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 /*Team Section*/
 .team {
   background-color: var(--color-team-section);
-  padding-top: 190px;
-  padding-bottom: 50px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .teammate {
@@ -186,6 +243,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .teammate-name {
@@ -254,7 +312,7 @@ body {
 }
 /*PORTFOLIO SECTION*/
 .portfolio {
-  padding-top: 70px;
+  padding-top: 95px;
   padding-bottom: 95px;
 }
 .filter-button {
