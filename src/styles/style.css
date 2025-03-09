@@ -232,6 +232,9 @@ body {
   height: 368px;
 }
 
+.teammate-photo {
+  margin-bottom: 30px;
+}
 .teammate-img {
   width: 270px;
   height: 260px;
@@ -253,6 +256,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .teammate-role {
@@ -262,6 +266,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 /*FOOTER*/
