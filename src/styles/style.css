@@ -41,6 +41,18 @@ body {
 }
 
 /*HEADER*/
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 93px;
+}
+
 .logo {
   font-family: var(--font-secondary);
   font-size: 26px;
@@ -52,30 +64,18 @@ body {
   letter-spacing: 0.03em;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-}
-
-.header {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.logo {
-  margin-right: 93px;
-}
 .logo-part {
   color: var(--color-second-logo);
   letter-spacing: 0.03em;
 }
 
+.navigation {
+  flex-grow: 1;
+}
+
 .nav-list {
   display: flex;
   gap: 48px;
-  margin-right: 344px;
 }
 
 .nav-link {
