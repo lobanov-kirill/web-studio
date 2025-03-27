@@ -172,6 +172,35 @@ body {
   flex-direction: row;
   gap: 30px;
 }
+
+.advantures-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantures-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: var(--color-team-section);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-image: url(/src/img/description/first.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantures-item:nth-child(2)::before {
+  background-image: url(/src/img/description/second.svg);
+}
+
+.advantures-item:nth-child(3)::before {
+  background-image: url(/src/img/description/third.svg);
+}
+
+.advantures-item:nth-child(4)::before {
+  background-image: url(/src/img/description/fourth.svg);
+}
 .advantures-title {
   font-size: 14px;
   font-weight: 700;
