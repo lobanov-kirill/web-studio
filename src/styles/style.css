@@ -279,6 +279,24 @@ img {
   gap: 30px;
 }
 
+.work-item-art{
+  position: relative;
+}
+.work-text{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  color: var(--color-work-section);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  padding: 27px 0;
+  position: absolute;
+  top: 224px;
+  left: 0;
+}
 /*Team Section*/
 .team {
   background-color: var(--color-team-section);
