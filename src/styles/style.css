@@ -279,10 +279,10 @@ img {
   gap: 30px;
 }
 
-.work-item-art{
+.work-item {
   position: relative;
 }
-.work-text{
+.work-text {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -294,7 +294,7 @@ img {
   width: 100%;
   padding: 27px 0;
   position: absolute;
-  top: 224px;
+  bottom: 0;
   left: 0;
 }
 /*Team Section*/
