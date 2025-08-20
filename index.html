@@ -71,11 +71,17 @@
             <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
-        <button class="btn-close" data-modal-close>Закрити</button>
+                <svg class="modal-close-svg" data-modal-close>
+                  <use href="./src/img/modal-close/symbol-defs.svg#icon-close" />
+                </svg>
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form>
-          <div class="form-field">
+          <div class="form-field">      
             <label for="username">Ім'я</label>
+            <div class="input-wrapper">
+                    <svg class="modal-svg">
+                  <use href="./src/img/modal-window/symbol-defs.svg#icon-person" />
+                </svg>
         <input
           id="username"
           required
@@ -85,8 +91,13 @@
           type="text"
         />
       </div>
+      </div>
       <div class="form-field">
         <label for="user_tel">Телефон</label>
+        <div class="input-wrapper">
+                    <svg class="modal-svg">
+                  <use href="./src/img/modal-window/symbol-defs.svg#icon-phone" />
+                </svg>
         <input
           id="user_tel"
           min="1"
@@ -95,10 +106,15 @@
           name="user_tel"
           type="text"
         />
+        </div>
       </div>
 
       <div class="form-field">
         <label for="user_email">Пошта</label>
+        <div class="input-wrapper">
+                    <svg class="modal-svg">
+                  <use href="./src/img/modal-window/symbol-defs.svg#icon-email" />
+                </svg>
         <input
           id="user_email"
           min="1"
@@ -107,13 +123,14 @@
           name="user_email"
           type="text"
         />
+        </div>
       </div>
       <div class="form-field"><label>Коментар</label>
       <textarea class="form-textarea" placeholder="Введіть текст"></textarea>
     </div>
         </form>
         
-      <div class="checkbox">
+      <div class="checkbox-div">
         <input type="checkbox" id="agree">
         <label for="agree">
           Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
@@ -477,6 +494,23 @@
                 </svg>
               </a>
             </li>
+        </div>
+        <div class="mailing">
+          <h3 class="mailing-title">Підпишіться на розсилку</h3>
+        <input
+          id="mailing-input"
+          min="1"
+          max="30"
+          required
+          name="email-mailing"
+          type="text"
+          placeholder="E-mail"
+        />
+        <button class="mailing-button" type="submit">Підписатися
+           <svg class="footer-mailing-svg">
+                  <use href="./src/img/footer-mailing/symbol-defs.svg#icon-send" />
+                </svg>
+              </button>
         </div>
       </div>
     </footer>

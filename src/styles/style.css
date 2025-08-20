@@ -2,7 +2,7 @@
   /*Кольори*/
   --color-text-title: #212121;
   --color-bg-primary: #2f303a;
-  --color-text-contact: rgba(255, 255, 255, 0.6);
+  --color-text-contact: #ffffff99;
   --color-header-border: #ececec;
   --color-team-section: #f5f4fa;
   --color-first-logo: #2196f3;
@@ -11,6 +11,7 @@
   --color-work-section: #ffffff;
   --color-gallery-border: #eeeeee;
   --color-button-submit: #188ce8;
+  --color-footer-mailing: #ffffff4d;
 
   /*Шрифти*/
   --font-primary: "Roboto", serif;
@@ -211,6 +212,16 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+
+.modal-close-svg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+}
+
 .modal {
   background-color: #ffffff;
   position: absolute;
@@ -227,14 +238,38 @@ img {
   font-size: 20px;
   font-weight: 700;
   color: var(--color-text-title);
-  letter-spacing: 3%;
-  letter-spacing: 1.15;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
   margin-bottom: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper .modal-svg {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--color-text-title);
+  pointer-events: none;
+}
+
+.input-wrapper:focus-within .modal-svg {
+  fill: var(--color-first-logo);
+}
+
+.input-wrapper input {
+  padding-left: 40px;
+  width: 100%;
+  height: 40px;
+}
 #user_tel {
   width: 448px;
   height: 40px;
@@ -242,7 +277,7 @@ img {
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 #user_tel:focus {
@@ -255,7 +290,7 @@ img {
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  cursor: text;
+  cursor: pointer;
 }
 #username:focus {
   border-color: var(--color-first-logo);
@@ -267,7 +302,7 @@ img {
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  cursor: text;
+  cursor: pointer;
 }
 #user_email:focus {
   border-color: var(--color-first-logo);
@@ -278,7 +313,7 @@ img {
   border: 1px solid;
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  cursor: text;
+  cursor: pointer;
 }
 
 textarea::placeholder {
@@ -310,10 +345,10 @@ textarea {
   font-size: 12px;
   color: var(--color-text-main);
   line-height: 1.16;
-  letter-spacing: 1%;
+  letter-spacing: 0.01em;
 }
 
-.checkbox {
+.checkbox-div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -321,14 +356,16 @@ textarea {
   padding-bottom: 30px;
   accent-color: var(--color-first-logo);
   cursor: pointer;
+  line-height: 1.4;
 }
 
 .checkbox label {
   font-size: 14px;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   line-height: 1.7;
 }
-.checkbox a {
+
+.checkbox-div a {
   color: var(--color-first-logo);
   text-decoration: none;
   text-decoration: underline;
@@ -349,6 +386,7 @@ textarea {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .submit-button:hover {
@@ -688,6 +726,62 @@ textarea {
   color: var(--color-work-section);
 }
 
+.mailing-title {
+  font-size: 14px;
+  font-style: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  color: var(--color-work-section);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#mailing-input {
+  outline: none;
+  cursor: text;
+  background-color: var(--color-bg-primary);
+  border: 1px solid;
+  border-color: var(--color-footer-mailing);
+  border-radius: 4px;
+  width: 358px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: var(--color-work-section);
+}
+
+#mailing-input::placeholder {
+  color: var(--color-text-contact);
+}
+.mailing-button {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.875;
+  color: var(--color-work-section);
+  background-color: var(--color-first-logo);
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 12px;
+}
+
+.mailing-button:hover {
+  transform: translateY(-2px);
+}
+
+.footer-mailing-svg {
+  fill: var(--color-work-section);
+  width: 24px;
+  height: 24px;
+}
 /*PORTFOLIO SECTION*/
 .portfolio {
   padding-top: 95px;
