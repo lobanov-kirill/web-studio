@@ -355,7 +355,6 @@ textarea {
   gap: 7px;
   padding-bottom: 30px;
   accent-color: var(--color-first-logo);
-  cursor: pointer;
   line-height: 1.4;
 }
 
