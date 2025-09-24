@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   /*Кольори*/
   --color-text-title: #212121;
@@ -871,4 +874,19 @@ textarea {
 
 .portfolio {
   border-top: 1px solid var(--color-header-border);
+}
+.scroll-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: grey;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
