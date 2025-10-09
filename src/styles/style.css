@@ -433,22 +433,22 @@ textarea {
   background-color: var(--color-team-section);
   margin-bottom: 30px;
   border-radius: 4px;
-  background-image: url(/src/img/description/first.svg);
+  background-image: url(../img/description/first.svg);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .advantures-item:nth-child(2)::before {
-  background-image: url(/src/img/description/second.svg);
+  background-image: url(../img/description/second.svg);
 }
 
 .advantures-item:nth-child(3)::before {
-  background-image: url(/src/img/description/third.svg);
+  background-image: url(../img/description/third.svg);
 }
 
 .advantures-item:nth-child(4)::before {
-  background-image: url(/src/img/description/fourth.svg);
+  background-image: url(../img/description/fourth.svg);
 }
 .advantures-title {
   font-size: 14px;
