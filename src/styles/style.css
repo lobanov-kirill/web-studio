@@ -15,6 +15,7 @@ html {
   --color-gallery-border: #eeeeee;
   --color-button-submit: #188ce8;
   --color-footer-mailing: #ffffff4d;
+  --color-portfolio-overlay: #2196f3e6;
 
   /*Шрифти*/
   --font-primary: "Roboto", serif;
@@ -95,8 +96,19 @@ img {
   color: var(--color-text-title);
   line-height: 1.14;
   letter-spacing: 0.02em;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  opacity: 0;
 }
 
+.nav-link:hover::after {
+  opacity: 1;
+}
 .header-contacts-item {
   display: flex;
   justify-content: center;
@@ -871,7 +883,36 @@ textarea {
   margin-right: 24px;
   margin-bottom: 20px;
 }
+/*Overlay*/
+.gallery-photo {
+  max-width: 370px;
+  position: relative;
+  overflow: hidden;
+}
+.overlay-portfolio {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-portfolio-overlay);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.gallery-photo:hover .overlay-portfolio {
+  transform: translateY(0);
+}
+.overlay-text {
+  font-size: 18px;
+  color: var(--color-work-section);
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+}
 .portfolio {
   border-top: 1px solid var(--color-header-border);
 }
@@ -883,7 +924,7 @@ textarea {
   height: 60px;
   border-radius: 50%;
   background-color: grey;
-  color: #ffffff;
+  color: var(--color-work-section);
   display: flex;
   justify-content: center;
   align-items: center;
