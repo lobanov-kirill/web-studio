@@ -81,13 +81,9 @@ img {
   letter-spacing: 0.03em;
 }
 
-.navigation {
-  flex-grow: 1;
-}
-
 .nav-list {
   display: flex;
-  gap: 48px;
+  gap: 50px;
 }
 
 .nav-link {
@@ -96,14 +92,8 @@ img {
   color: var(--color-text-title);
   line-height: 1.14;
   letter-spacing: 0.02em;
-  content: "";
   width: 100%;
   height: 3px;
-  background-color: red;
-  position: absolute;
-  left: 0;
-  bottom: -32px;
-  opacity: 0;
 }
 
 .nav-link:hover::after {
@@ -141,7 +131,7 @@ img {
 
 .header-contacts-list {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .nav-link:hover {
@@ -762,6 +752,7 @@ textarea {
   padding-bottom: 15px;
   padding-top: 15px;
   color: var(--color-work-section);
+  height: 50px;
 }
 
 #mailing-input::placeholder {
@@ -930,4 +921,10 @@ textarea {
   align-items: center;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: transform 0.2s ease-in-out 10ms;
+}
+
+.scroll-to-top:hover {
+  /*transform: perspective(100px) rotateY(360deg); 360 deg*/
+  transform: scale(1.2);
 }
