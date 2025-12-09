@@ -33,7 +33,7 @@
               <a class="nav-link" href="../../index.html">Студія</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+              <a class="nav-link current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Контакти</a>
@@ -42,11 +42,17 @@
         </nav>
         <ul class="header-contacts-list">
           <li class="header-contacts-item">
+            <svg class="header-contacts-svg header-contacts-svg-email">
+              <use href="../img/symbol-defs.svg#icon-envelope" />
+            </svg>
             <a class="header-contacts-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="header-contacts-item">
+            <svg class="header-contacts-svg header-contacts-svg-smartphone">
+              <use href="../img/symbol-defs.svg#icon-smartphone" />
+            </svg>
             <a class="header-contacts-link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -277,9 +283,11 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container footer-container">
-        <a class="footer-logo" href="../../index.html"
+        <div>
+        <a class="footer-logo" href="/index.html"
           >Web<span class="footer-logo-part">Studio</span></a
         >
+        
         <address class="footer-adress">
           <p class="footer-adress-text">м. Київ, пр-т Лесі Українки, 26</p>
           <ul class="footer-contacts-list">
@@ -295,6 +303,58 @@
             </li>
           </ul>
         </address>
+        </div>
+        <div class="footer-social">
+          <h3 class="footer-social-title">ПРИЄДНУЙТЕСЬ</h3>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#" class="footer-circle-hover">
+                <svg class="footer-social-svg">
+                  <use href="../img/symbol-defs.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-circle-hover">
+                <svg class="footer-social-svg">
+                  <use href="../img/symbol-defs.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-circle-hover">
+                <svg class="footer-social-svg">
+                  <use href="../img/symbol-defs.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-circle-hover">
+                <svg class="footer-social-svg">
+                  <use href="../img/symbol-defs.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+        </div>
+        <div class="mailing">
+          <form class="mailing-form">
+          <h3 class="mailing-title">Підпишіться на розсилку</h3>
+        <input
+          id="mailing-input"
+          min="1"
+          max="30"
+          required
+          name="email-mailing"
+          type="text"
+          placeholder="E-mail"
+        />
+        <button class="mailing-button" type="submit">Підписатися
+           <svg class="footer-mailing-svg">
+                  <use href="../img/footer-mailing/symbol-defs.svg#icon-send" />
+                </svg>
+              </button>
+        </div>
+        </form>
       </div>
     </footer>
     <a class="scroll-to-top" href="#portfolio">Scroll Top</a>
